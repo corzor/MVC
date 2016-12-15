@@ -47,7 +47,9 @@ public class Model extends java.util.Observable {
 
 	//uncomment this if View is using Model Pull to get the counter
 	//not needed if getting counter from notifyObservers()
-	//public int getValue(){return counter;}
+	public int getValue() {
+		return counter;
+	}
 
 	//notifyObservers()
 	//model sends notification to view because of RunMVC: myModel.addObserver(myView)

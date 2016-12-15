@@ -43,8 +43,8 @@ class View implements java.util.Observer {
 		frame.add("South", panel);		
 
 		frame.addWindowListener(new CloseListener());	
-		frame.setSize(200,100);
-		frame.setLocation(100,100);
+		frame.setSize(400,200);
+		frame.setLocation(200,200);
 		frame.setVisible(true);
 
 	} //View()
