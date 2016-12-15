@@ -39,6 +39,16 @@ public class CounterServlet extends HttpServlet {
     }
 
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("CounterServlet: initializing View");
+
+        req.setAttribute("counter", model.getValue());
+        // Set View
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("view.jsp");  // web View
+        requestDispatcher.forward(req, resp);
+    }
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("CounterServlet: acting on Model");
 
@@ -46,7 +56,7 @@ public class CounterServlet extends HttpServlet {
 
         req.setAttribute("counter", model.getValue());
         // Set View
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");  // web View
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("view.jsp");  // web View
         requestDispatcher.forward(req, resp);
     }
 }

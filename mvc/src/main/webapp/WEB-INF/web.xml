@@ -6,7 +6,6 @@
     <servlet>
         <servlet-name>CounterServlet</servlet-name>
         <servlet-class>CounterServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>CounterServlet</servlet-name>

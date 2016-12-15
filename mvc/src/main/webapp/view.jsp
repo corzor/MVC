@@ -7,11 +7,17 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    System.out.println("index.jsp - View");
+    System.out.println("view.jsp");
 %>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0;url=<%=request.getContextPath()%>/counter">
     <title>Simple MVC</title>
 </head>
+<body>
+    <p>counter</p>
+    <p><%=request.getAttribute("counter")%></p>
+    <form method="post" action="<%=request.getContextPath()%>/counter">
+        <p><input type="button" value="PressMe"/></p>
+    </form>
+</body>
 </html>
