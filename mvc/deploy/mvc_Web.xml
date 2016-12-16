@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
+
+<!-- =============================================================== -->
+<!-- Configure the mvc_Web webapp                                  -->
+<!-- =============================================================== -->
+<Configure id='wac' class="org.eclipse.jetty.webapp.WebAppContext">
+
+  <Set name="contextPath">/mvc</Set>
+  <Set name="war"><Property name="jetty.webapps" default="."/>/mvc_Web.war</Set>
+  <Set name="extractWAR">true</Set>
+
+</Configure>
