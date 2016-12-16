@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: robin
+  User: Richard Corzo
   Date: 12/14/2016
   Time: 12:02 PM
   To change this template use File | Settings | File Templates.
@@ -17,7 +17,7 @@
     <p>counter</p>
     <p><%=request.getAttribute("counter")%></p>
     <form method="post" action="<%=request.getContextPath()%>/counter">
-        <p><input type="button" value="PressMe"/></p>
+        <p><input type="submit" value="PressMe"/></p>
     </form>
 </body>
 </html>
